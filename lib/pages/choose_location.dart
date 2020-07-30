@@ -9,15 +9,29 @@ class ChooseLocation extends StatefulWidget {
 class _ChooseLocationState extends State<ChooseLocation> {
   List<WorldTime> locations = [
     WorldTime(
-        location: 'Malaysia', flag: 'malaysia.png', url: 'Asia/Kuala_Lumpur'),
+        location: 'Malaysia',
+        flag: 'malaysia.png',
+        url: 'timezone/Asia/Kuala_Lumpur'),
     WorldTime(
-        location: 'London', flag: 'united-kingdom.png', url: 'Europe/London'),
-    WorldTime(location: 'Athens', flag: 'germany.png', url: 'Europe/Berlin'),
-    WorldTime(location: 'Cairo', flag: 'egypt.png', url: 'Africa/Cairo'),
-    WorldTime(location: 'Chicago', flag: 'usa.png', url: 'America/Chicago'),
-    WorldTime(location: 'New York', flag: 'usa.png', url: 'America/New_York'),
-    WorldTime(location: 'Seoul', flag: 'south-korea.png', url: 'Asia/Seoul'),
-    WorldTime(location: 'Jakarta', flag: 'indonesia.png', url: 'Asia/Jakarta'),
+        location: 'London',
+        flag: 'united-kingdom.png',
+        url: 'timezone/Europe/London'),
+    WorldTime(
+        location: 'Athens', flag: 'germany.png', url: 'timezone/Europe/Berlin'),
+    WorldTime(
+        location: 'Cairo', flag: 'egypt.png', url: 'timezone/Africa/Cairo'),
+    WorldTime(
+        location: 'Chicago', flag: 'usa.png', url: 'timezone/America/Chicago'),
+    WorldTime(
+        location: 'New York',
+        flag: 'usa.png',
+        url: 'timezone/America/New_York'),
+    WorldTime(
+        location: 'Seoul', flag: 'south-korea.png', url: 'timezone/Asia/Seoul'),
+    WorldTime(
+        location: 'Jakarta',
+        flag: 'indonesia.png',
+        url: 'timezone/Asia/Jakarta'),
   ];
 
   void updateTime(index) async {
